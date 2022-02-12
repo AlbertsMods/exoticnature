@@ -1,6 +1,5 @@
 package com.tuppymsm.exoticnature.block;
 
-import com.tuppymsm.exoticnature.world.feature.tree.WhimperingSmallTreeGrower;
 import net.albertsmods.albertslibrary.block.custom.flammable.nether.ModNetherFlammableLeavesBlock;
 import net.albertsmods.albertslibrary.block.custom.flammable.nether.ModNetherFlammablePlankBlock;
 import net.albertsmods.albertslibrary.block.custom.flammable.nether.ModNetherFlammableRotatedPillarBlock;
@@ -25,28 +24,12 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ExoticNature.MOD_ID);
 
-    // Whimpering Willow
-    public static final RegistryObject<Block> WHIMPERING_LOG = registerBlock("whimpering_log",
-            () -> new ModNetherFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_STEM)), ModCreativeModTab.EXOTIC_NATURE);
-
-    public static final RegistryObject<Block> WHIMPERING_WOOD = registerBlock("whimpering_wood",
-            () -> new ModNetherFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_HYPHAE)), ModCreativeModTab.EXOTIC_NATURE);
-
-    public static final RegistryObject<Block> WHIMPERING_PLANKS = registerBlock("whimpering_planks",
-            () -> new ModNetherFlammablePlankBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS))
-            , ModCreativeModTab.EXOTIC_NATURE);
-
-    public static final RegistryObject<Block> WHIMPERING_LEAVES = registerBlock("whimpering_leaves",
-            () -> new ModNetherFlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
-            , ModCreativeModTab.EXOTIC_NATURE);
-
-    public static final RegistryObject<Block> WHIMPERING_SAPLING = registerBlock("whimpering_sapling",
-            () -> new SaplingBlock(new WhimperingTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
-            ModCreativeModTab.EXOTIC_NATURE);
-
-    public static final RegistryObject<Block> WHIMPERING_SAPLING_SMALL = registerBlock("whimpering_sapling_small",
-            () -> new SaplingBlock(new WhimperingSmallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
-            ModCreativeModTab.EXOTIC_NATURE);
+    public static final RegistryObject<Block> WHIMPERING_LOG = registerBlock("whimpering_log", () -> new ModNetherFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_STEM)), ModCreativeModTab.EXOTIC_NATURE);
+    public static final RegistryObject<Block> WHIMPERING_WOOD = registerBlock("whimpering_wood", () -> new ModNetherFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_HYPHAE)), ModCreativeModTab.EXOTIC_NATURE);
+    public static final RegistryObject<Block> WHIMPERING_PLANKS = registerBlock("whimpering_planks", () -> new ModNetherFlammablePlankBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)), ModCreativeModTab.EXOTIC_NATURE);
+    public static final RegistryObject<Block> WHIMPERING_LEAVES = registerBlock("whimpering_leaves", () -> new ModNetherFlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)), ModCreativeModTab.EXOTIC_NATURE);
+    public static final RegistryObject<Block> WHIMPERING_SAPLING = registerBlock("whimpering_sapling", () -> new SaplingBlock(new WhimperingTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModTab.EXOTIC_NATURE);
+    //public static final RegistryObject<Block> WHIMPERING_SAPLING_SMALL = registerBlock("whimpering_sapling_small", () -> new SaplingBlock(new WhimperingSmallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModTab.EXOTIC_NATURE);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

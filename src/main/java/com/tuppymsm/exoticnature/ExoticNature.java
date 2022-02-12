@@ -46,7 +46,6 @@ public class ExoticNature {
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHIMPERING_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHIMPERING_SAPLING.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHIMPERING_SAPLING_SMALL.get(), RenderType.cutout());
 
         WoodType.register(ModWoodTypes.WHIMPERING);
     }
@@ -57,7 +56,7 @@ public class ExoticNature {
     }
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            BiomeProviders.register(new ModBiomeProvider(new ResourceLocation(MOD_ID, "biome_provider"), 2));
+            BiomeProviders.register(new ModBiomeProvider(new ResourceLocation(MOD_ID, "biome_provider"), 2, 1));
         });
     }
     @SubscribeEvent

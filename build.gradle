@@ -93,7 +93,7 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.1-39.0.36'
-    implementation fg.deobf('com.github.glitchfiend:TerraBlender-forge:1.18.1-1.1.0.62')
+    implementation fg.deobf('com.github.glitchfiend:TerraBlender-forge:1.18.1-1.1.0.73')
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

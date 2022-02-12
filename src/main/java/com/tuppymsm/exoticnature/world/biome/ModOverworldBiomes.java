@@ -41,15 +41,4 @@ public class ModOverworldBiomes
         BiomeDefaultFeatures.addDefaultSprings(builder);
         BiomeDefaultFeatures.addInfestedStone(builder);
     }
-
-    public static Biome whimperingWoods() { // temp in overworld while nether gen gets sorted
-        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
-        BiomeDefaultFeatures.commonSpawns(spawnBuilder); // also temp
-
-        BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder();
-        globalOverworldGeneration(biomeBuilder);
-        ExoticNatureDefaultBiomeFeatures.addWhimperingWillow(biomeBuilder);
-        ExoticNatureDefaultBiomeFeatures.addWhimperingWillowSmall(biomeBuilder);
-        return biome(Biome.Precipitation.NONE, Biome.BiomeCategory.NETHER, 3.0F, 0.0F, spawnBuilder, biomeBuilder, NORMAL_MUSIC);
-    }
 }

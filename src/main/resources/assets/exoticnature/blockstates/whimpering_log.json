@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "exoticnature:block/whimpering_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "exoticnature:block/whimpering_log"
+    },
+    "axis=z": {
+      "model": "exoticnature:block/whimpering_log_horizontal",
+      "x": 90
+    }
+  }
+}

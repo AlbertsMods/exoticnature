@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+issueTrackerURL="https://github.com/AlbertsMods/exoticnature/issues"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/exoticnature"
+license="All rights reserved"
+[[mods]]
+modId="exoticnature"
+version="${file.jarVersion}"
+displayName="Exotic Nature"
+logoFile="logo.png"
+credits="To do"
+authors="To do"
+description='''
+To do
+'''
+
+[[dependencies.exoticnature]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exoticnature]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exoticnature]]
+    modId="terrablender"
+    mandatory=true
+    versionRange="[1.1.0.61,)"
+    ordering="NONE"
+    side="BOTH"

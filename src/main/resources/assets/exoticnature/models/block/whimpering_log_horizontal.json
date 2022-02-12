@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "exoticnature:block/whimpering_log_top",
+    "side": "exoticnature:block/whimpering_log"
+  }
+}

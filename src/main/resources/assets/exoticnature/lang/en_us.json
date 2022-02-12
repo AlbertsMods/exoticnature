@@ -1,0 +1,15 @@
+{
+ "item.exoticnature.soul_berry": "Soul Berries",
+ "item.exoticnature.gac_fruit": "Gac",
+ "item.exoticnature.exotic_music_disc": "Music Disc",
+
+ "item.exoticnature.gac_chestplate": "Gac Chestplate",
+ "item.exoticnature.gac_boots": "Gac Boots",
+ "item.exoticnature.gac_leggings": "Gac Leggings",
+ "item.exoticnature.gac_helmet": "Gac Helmet",
+
+
+ "itemGroup.ExoticNatureCreativeModeTab": "Exotic Nature",
+
+ "item.exoticnature.exotic_music_disc.desc": "Exotic Nature - exotic"
+}

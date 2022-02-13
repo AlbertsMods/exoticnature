@@ -57,7 +57,7 @@ public class ExoticNature {
     }
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            BiomeProviders.register(new ModBiomeProvider(new ResourceLocation(MOD_ID, "biome_provider"), 1, 1));
+            BiomeProviders.register(new ModBiomeProvider(new ResourceLocation(MOD_ID, "biome_provider"), 0, 0));
         });
     }
     @SubscribeEvent

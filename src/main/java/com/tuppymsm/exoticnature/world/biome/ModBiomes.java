@@ -15,8 +15,6 @@ public class ModBiomes {
         IForgeRegistry<Biome> registry = event.getRegistry();
 
         // Overworld
-
         // Nether
-        registry.register(ModNetherBiomes.whimperingWoods().setRegistryName(ModBiomeInit.WHIMPERING_WOODS.location()));
     }
 }

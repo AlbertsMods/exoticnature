@@ -38,18 +38,4 @@ public class ModNetherBiomes {
         BiomeDefaultFeatures.addAncientDebris(builder);
         BiomeDefaultFeatures.addNetherDefaultOres(builder);
     }
-
-    public static Biome whimperingWoods() {
-        MobSpawnSettings.Builder spawnSettings = new MobSpawnSettings.Builder();
-        spawnSettings.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.ZOMBIFIED_PIGLIN, 80, 4, 4));
-        spawnSettings.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.MAGMA_CUBE, 100, 2, 5));
-        spawnSettings.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.PIGLIN, 15, 4, 4));
-        spawnSettings.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.STRIDER, 60, 1, 2));
-
-
-        BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder();
-        globalNetherGeneration(biomeBuilder);
-        ExoticNatureDefaultBiomeFeatures.addWhimperingWillow(biomeBuilder);
-        return biome(Biome.Precipitation.NONE, Biome.BiomeCategory.NETHER, 3.0F, 0.0F, spawnSettings, biomeBuilder, NORMAL_MUSIC);
-    }
 }

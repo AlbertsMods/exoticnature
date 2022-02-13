@@ -27,7 +27,6 @@ public class ModBiomeProvider extends BiomeProvider
     @Override
 
     public void addNetherBiomes(Registry<Biome> registry, Consumer<Pair<TBClimate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        this.addBiome(mapper, Climate.Parameter.point(0.0F), Climate.Parameter.point(-0.5F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), 0.0F, ModBiomeInit.WHIMPERING_WOODS);
     }
 
     @Override

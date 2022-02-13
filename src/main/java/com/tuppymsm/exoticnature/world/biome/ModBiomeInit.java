@@ -8,7 +8,6 @@ import net.minecraft.world.level.biome.Biome;
 
 public class ModBiomeInit {
 
-    public static final ResourceKey<Biome> WHIMPERING_WOODS = register("whimpering_woods");
     public static final ResourceKey<Biome> EUCALYPTUS_EDGE = register("eucalyptus_edge");
     public static final ResourceKey<Biome> RAINFOREST = register("rainforest");
 

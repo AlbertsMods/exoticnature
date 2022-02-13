@@ -18,8 +18,7 @@ public class ModSurfaceRuleData {
         return SurfaceRules.sequence(
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomeInit.WHIMPERING_WOODS), SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SOUL_SOIL)),
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomeInit.WHIMPERING_WOODS), SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, NETHERRACK)),
-                // Default to a grass and dirt surface
-                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface)
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomeInit.WHIMPERING_WOODS), SurfaceRules.ifTrue(SurfaceRules.UNDER_CEILING, NETHERRACK))
         );
     }
 

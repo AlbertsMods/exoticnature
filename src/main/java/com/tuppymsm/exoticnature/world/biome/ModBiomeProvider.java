@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import terrablender.api.BiomeProvider;
 import terrablender.worldgen.TBClimate;
@@ -19,22 +20,24 @@ public class ModBiomeProvider extends BiomeProvider
     {
         super(name, overworldWeight, netherWeight);
     }
+
     @Override
-    public void addOverworldBiomes(Registry<Biome> registry, Consumer<Pair<TBClimate.ParameterPoint, ResourceKey<Biome>>> mapper)
-    {
+    public void addOverworldBiomes(Registry<Biome> registry, Consumer<Pair<TBClimate.ParameterPoint, ResourceKey<Biome>>> mapper) {
     }
     @Override
+
     public void addNetherBiomes(Registry<Biome> registry, Consumer<Pair<TBClimate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        //this.addBiomeSimilar(mapper, Biomes.SOUL_SAND_VALLEY, ModBiomeInit.WHIMPERING_WOODS);
+        this.addBiome(mapper, Climate.Parameter.point(0.0F), Climate.Parameter.point(-0.5F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), 0.0F, ModBiomeInit.WHIMPERING_WOODS);
+    }
+
+    @Override
+    public Optional<SurfaceRules.RuleSource> getOverworldSurfaceRules()
+    {
+        return Optional.of(ModSurfaceRuleData.makeRules());
     }
 
     @Override
     public Optional<SurfaceRules.RuleSource> getNetherSurfaceRules()
-    {
-        return Optional.of(ModSurfaceRuleData.makeRules());
-    }
-    @Override
-    public Optional<SurfaceRules.RuleSource> getOverworldSurfaceRules()
     {
         return Optional.of(ModSurfaceRuleData.makeRules());
     }

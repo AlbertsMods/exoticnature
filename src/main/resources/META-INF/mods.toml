@@ -31,6 +31,6 @@ To do
 [[dependencies.exoticnature]]
     modId="terrablender"
     mandatory=true
-    versionRange="[1.1.0.61,)"
+    versionRange="[1.1.0.73,)"
     ordering="NONE"
     side="BOTH"

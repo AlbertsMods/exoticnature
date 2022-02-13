@@ -28,7 +28,7 @@ import java.util.List;
 
 public class ModConfiguredFeature {
     // Whimpering Tree
-    public static final ConfiguredFeature<?, ?> WHIMPERING_TREE = FeatureUtils.register("azalea_tree",
+    public static final ConfiguredFeature<?, ?> WHIMPERING_TREE = FeatureUtils.register("whimpering_willow",
             Feature.TREE.configured((new TreeConfiguration.TreeConfigurationBuilder
                     (BlockStateProvider.simple(ModBlocks.WHIMPERING_LOG.get()), new BendingTrunkPlacer
                             (4, 2, 0, 3, UniformInt.of

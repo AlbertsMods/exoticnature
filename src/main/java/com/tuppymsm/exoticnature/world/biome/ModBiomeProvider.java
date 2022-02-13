@@ -25,7 +25,7 @@ public class ModBiomeProvider extends BiomeProvider
     }
     @Override
     public void addNetherBiomes(Registry<Biome> registry, Consumer<Pair<TBClimate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        this.addBiomeSimilar(mapper, Biomes.SOUL_SAND_VALLEY, ModBiomeInit.WHIMPERING_WOODS);
+        //this.addBiomeSimilar(mapper, Biomes.SOUL_SAND_VALLEY, ModBiomeInit.WHIMPERING_WOODS);
     }
 
     @Override

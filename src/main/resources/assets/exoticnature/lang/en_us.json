@@ -2,11 +2,22 @@
  "item.exoticnature.soul_berry": "Soul Berries",
  "item.exoticnature.gac_fruit": "Gac",
  "item.exoticnature.exotic_music_disc": "Music Disc",
+ "item.exoticnature.akebia": "Akebia",
+ "item.exoticnature.wild_akebia": "Wild Akebia",
+
+ "block.exoticnature.whimpering_log": "Whimpering Log",
+ "block.exoticnature.whimpering_wood": "Whimpering Wood",
+ "block.exoticnature.whimpering_planks": "Whimpering Planks",
+ "block.exoticnature.whimpering_leaves": "Whimpering Leaves",
+ "block.exoticnature.whimpering_sapling": "Whimpering Sapling",
+ "block.exoticnature.akebia_vine": "Akebia Vine",
 
  "item.exoticnature.gac_chestplate": "Gac Chestplate",
  "item.exoticnature.gac_boots": "Gac Boots",
  "item.exoticnature.gac_leggings": "Gac Leggings",
  "item.exoticnature.gac_helmet": "Gac Helmet",
+
+ "biome.exoticnature.whimpering_woods": "Whimpering Woods"
 
 
  "itemGroup.ExoticNatureCreativeModeTab": "Exotic Nature",

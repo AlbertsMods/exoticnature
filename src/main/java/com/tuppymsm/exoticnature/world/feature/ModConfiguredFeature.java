@@ -15,6 +15,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
@@ -37,13 +38,16 @@ public class ModConfiguredFeature {
                                     (Blocks.DIAMOND_BLOCK.defaultBlockState(), 1)), new
                             RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2),
                             50), new TwoLayersFeatureSize(1, 0, 1)))
-                    .dirt(BlockStateProvider.simple(Blocks.SOUL_SAND)).forceDirt().build()));
+                    .dirt(BlockStateProvider.simple(Blocks.SOUL_SOIL)).forceDirt().build()));
 
     public static final ConfiguredFeature<RandomFeatureConfiguration, ?> WHIMPERING_TREE_CHECKED =
             FeatureUtils.register("whimpering_feature",
                     Feature.RANDOM_SELECTOR.configured(new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
                             WHIMPERING_TREE.filteredByBlockSurvival(ModBlocks.WHIMPERING_SAPLING.get()), 0.1f)),
                             WHIMPERING_TREE.filteredByBlockSurvival(ModBlocks.WHIMPERING_SAPLING.get()))));
+
+    // Other
+    public static final ConfiguredFeature<?, ?> AKEBIA_VINE = createConfiguredFeature("akebia_vine", Feature.VINES.configured(NoneFeatureConfiguration.NONE));
 
 
     public static <FC extends FeatureConfiguration, F extends Feature<FC>, CF extends ConfiguredFeature<FC, F>> CF createConfiguredFeature(String id, CF configuredFeature) {

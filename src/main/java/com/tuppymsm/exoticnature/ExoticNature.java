@@ -46,6 +46,7 @@ public class ExoticNature {
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHIMPERING_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHIMPERING_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.AKEBIA_VINE.get(), RenderType.translucent());
 
         WoodType.register(ModWoodTypes.WHIMPERING);
     }

@@ -9,4 +9,8 @@ public class ExoticNatureDefaultBiomeFeatures {
     public static void addWhimperingWillow(BiomeGenerationSettings.Builder gen) {
         gen.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHIMPERING_PLACED);
     }
+
+    public static void addAkebiaVines(BiomeGenerationSettings.Builder gen) {
+        gen.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AKEBIA_VINES_PLACED);
+    }
 }

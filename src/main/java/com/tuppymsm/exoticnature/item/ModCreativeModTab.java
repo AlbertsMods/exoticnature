@@ -7,7 +7,7 @@ public class ModCreativeModTab {
     public static final CreativeModeTab EXOTIC_NATURE = new CreativeModeTab("ExoticNatureCreativeModeTab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.SOUL_BERRY.get());
+            return new ItemStack(ModItems.MANGOSTEEN.get());
         }
     };
 }

@@ -28,7 +28,9 @@ public class ModItems {
     public static final RegistryObject<Item> EXOTIC_MUSIC_DISC = ITEMS.register("exotic_music_disc", () -> new RecordItem(1, () -> ModSoundEvents.EXOTIC_DISC.get(), new Item.Properties().stacksTo(1).tab(ModCreativeModTab.EXOTIC_NATURE).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> AKEBIA = ITEMS.register("akebia", () -> new Item(new Item.Properties().tab(ModCreativeModTab.EXOTIC_NATURE).food(new FoodProperties.Builder().nutrition(4).saturationMod(2.0f).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 1), 1.0f).build())));
     public static final RegistryObject<Item> WILD_AKEBIA = ITEMS.register("wild_akebia", () -> new Item(new Item.Properties().tab(ModCreativeModTab.EXOTIC_NATURE).food(new FoodProperties.Builder().nutrition(5).saturationMod(2.0f).effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 1), 1.0f).build())));
-
+    public static final RegistryObject<Item> MANGOSTEEN = ITEMS.register("mangosteen", () -> new Item(new Item.Properties().tab(ModCreativeModTab.EXOTIC_NATURE).food(new FoodProperties.Builder().nutrition(3).saturationMod(1.0f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1.0f).build())));
+    public static final RegistryObject<Item> PRICKLY_PEAR = ITEMS.register("prickly_pear", () -> new Item(new Item.Properties().tab(ModCreativeModTab.EXOTIC_NATURE).food(new FoodProperties.Builder().nutrition(3).saturationMod(1.0f).effect(() -> new MobEffectInstance(MobEffects.HARM, 1, 1), 1.0f).build())));
+    public static final RegistryObject<Item> POMELO = ITEMS.register("pomelo", () -> new Item(new Item.Properties().tab(ModCreativeModTab.EXOTIC_NATURE).food(new FoodProperties.Builder().nutrition(6).saturationMod(3.0f).build())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
